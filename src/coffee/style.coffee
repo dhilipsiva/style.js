@@ -11,17 +11,17 @@
 #
 
 
-class Objectify
+class ChangeManager
   constructor: (@name)->
     @obj = {}
     @obj['name'] = @name
 
-  add: (selectors, property, value)->
+  change: (selectors, property, value)->
     if !@obj[selectors]
       @obj[selectors] = {}
     @obj[selectors][property] = value
 
-  href: ->
+  data: ->
     "data:text/json;charset=utf-8,#{encodeURIComponent(JSON.stringify(@obj, undefined, 4))}"
 
 
@@ -42,17 +42,17 @@ String::toJSProperty = ->
 
 
 class StyleJS
-  element: null
+  toolbar: null
   downloadButton: null
 
   constructor: (@config) ->
 
-    @element = document.createElement "div"
-    @element.className = "style-js-root"
+    @toolbar = document.querySelector @config.toolbar
     @downloadButton = document.createElement "a"
     @downloadButton.download = "stylejs.json"
-    @downloadButton.innerHTML = "download"
-    @objectify = new Objectify
+    @downloadButton.innerHTML = "Download Changes"
+    @downloadButton.href = "#"
+    @changeManager = new ChangeManager
     self = @
 
     for item in @config.items
@@ -71,8 +71,8 @@ class StyleJS
           value = @value
           targSelectors = @getAttribute "data-selectors"
 
-          self.objectify.add targSelectors, targAttr, value
-          self.downloadButton.href = self.objectify.href()
+          self.changeManager.change targSelectors, targAttr, value
+          self.downloadButton.href = self.changeManager.data()
 
           targAttrJS = targAttr.toJSProperty()
 
@@ -80,19 +80,15 @@ class StyleJS
             element.style[targAttrJS] = @value
 
         input.onkeyup = input.onchange
-        @element.appendChild input
+        @toolbar.appendChild input
 
-    @element.appendChild @downloadButton
-    document.body.appendChild @element
-
-  showIn: (selector)->
-    alert "Not Implemented"
+    @toolbar.appendChild @downloadButton
 
   hide: ->
-    alert "Not Implemented"
+    @toolbar.style.display = "none"
 
   show: ->
-    alert "Not Implemented"
+    @toolbar.style.display = "block"
 
 
 window.StyleJS = StyleJS
