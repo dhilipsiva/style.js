@@ -6,11 +6,15 @@
         <link href="css/demo.css" media="all" rel="stylesheet" type="text/css" />
     </head>
     <body>
-        <div id="style-js-demo">
-            style.js demo :)
+        <div id="style-js-demo" style="background-color:#0bee92;font-size:12px;">
+            <h1>style.js demo :)<h1>
         </div>
-        <div id="style-js-demo-2">
-            This is next one.
+        <div id="style-js-demo-2" style="color:#FD4FFC;font-size:15px;">
+            <h3>Now, its possible for non-techies to make css changes and send the desired values.</h3>
+            <h2>How cool is that?</h2>
+        </div>
+        <div>
+            <h4>Add any css property and its appropriate input-type to the config.</h4>
         </div>
         <table id="style-js-toolbar" style="display:hide;">
         </table>
@@ -25,7 +29,7 @@
                 name: "Demo Element",
                 selectors: "#style-js-demo",
                 properties: [{
-                    name: "color",
+                    name: "background-color",
                     initial: "#0bee92",
                     type: "color"
                 }, {
@@ -37,7 +41,7 @@
                 name: "Second line",
                 selectors: "#style-js-demo-2",
                 properties: [{
-                    name: "background-color",
+                    name: "color",
                     initial: "#FD4FFC",
                     type: "color"
                 },{
