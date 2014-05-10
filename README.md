@@ -1,53 +1,74 @@
 style.js
 ===
 
-A layman's tool to style HTML Elements
+A layman's tool to style HTML Elements and share CSS values
 
-### Maintainer
+### Motive behind style.js
 
-[dhilipsiva](https://github.com/dhilipsiva)
+I often work with `Non-techie Entrepreneurs`. While they are virtually always happy about the functionality, a lot of time is being wasted on UI iterations. You know, like change color, size, background, alignment, position, etc. I had to make changes, test, commit, push, deploy, client-check and repeat until client is happy. I got sick of it and built this tool. Now, I ll just integrate and configure this stuff. The client can make changes according to the configuration and download (without server interaction) the changes as `json` file and mail it to me. No more back-and-forth circus.
 
 ### Get Started
 
-Install dependencies
+Look at [`demo.html`](http://dhilipsiva.github.io/style.js/demo.html) to see how to use style.js.
 
-`sudo npm install && bower install`
-
-Build Project
-
-`grunt`
-
-Run Tests
-
-Open `SpecRunner.html` in your browser and test with jasmine
-
-### How to use
-
-
-```javascript
-//say Hello World
-styleJS(config);
+```html
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>style.js demo :)</title>
+        <link href="css/demo.css" media="all" rel="stylesheet" type="text/css" />
+    </head>
+    <body>
+        <div id="style-js-demo" style="background-color:#0bee92;font-size:12px;">
+            <h1>style.js demo :)<h1>
+        </div>
+        <div id="style-js-demo-2" style="color:#FD4FFC;font-size:15px;">
+            <h3>Now, its possible for non-techies to make css changes and send the desired values.</h3>
+            <h2>How cool is that?</h2>
+        </div>
+        <div>
+            <h4>Add any css property and its appropriate input-type to the config.</h4>
+        </div>
+        <table id="style-js-toolbar" style="display:hide;">
+        </table>
+    </body>
+    <script type="text/javascript" charset="utf-8" src="src/js/style.js"></script>
+    <script type="text/javascript" charset="utf-8">
+        var config;
+        config = {
+            name: "Demo Page",
+            toolbar: "#style-js-toolbar",
+            items: [{
+                name: "Demo Element",
+                selectors: "#style-js-demo",
+                properties: [{
+                    name: "background-color",
+                    initial: "#0bee92",
+                    type: "color"
+                }, {
+                    name: "font-size",
+                    initial: "12px",
+                    type: "text"
+                }]
+            },{
+                name: "Second line",
+                selectors: "#style-js-demo-2",
+                properties: [{
+                    name: "color",
+                    initial: "#FD4FFC",
+                    type: "color"
+                },{
+                    name: "font-size",
+                    initial: "15px",
+                    type: "text"
+                }]
+            }]
+        };
+        var style = new StyleJS(config);
+        style.show()
+    </script>
+</html>
 ```
 
-### License
-
-The MIT License (MIT)
-
-Copyright (c) 2013 dhilipsiva
-
-Permission is hereby granted, free of charge, to any person obtaining a copy of
-this software and associated documentation files (the "Software"), to deal in
-the Software without restriction, including without limitation the rights to
-use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
-the Software, and to permit persons to whom the Software is furnished to do so,
-subject to the following conditions:
-
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
-FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
-COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
-IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
-CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+dhilipsiva
