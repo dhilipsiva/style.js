@@ -7,6 +7,10 @@ A layman's tool to style HTML Elements and share CSS values
 
 I often work with `Non-techie Entrepreneurs`. While they are virtually always happy about the functionality, a lot of time is being wasted on UI iterations. You know, like change color, size, background, alignment, position, etc. I had to make changes, test, commit, push, deploy, client-check and repeat until client is happy. I got sick of it and built this tool. Now, I ll just integrate and configure this stuff. The client can make changes according to the configuration and download (without server interaction) the changes as `json` file and mail it to me. No more back-and-forth circus.
 
+### Browser Support
+
+Works well with chrome. I didn't test it with any other browsers, but I am guessing it should work OK. Chrome is all that matters. Because if the Client you are building the product for is not ready to use latest Chrome for testing, maybe you should not build a product for him. This is something that is to be used only during the development. So I believe Chrome is good Enough. Pull requests are always welcomed.
+
 ### Get Started
 
 Look at `demo.html` to see how to use style.js.
