@@ -9,7 +9,7 @@ I often work with `Non-techie Entrepreneurs`. While they are virtually always ha
 
 ### Get Started
 
-Look at [`demo.html`](http://dhilipsiva.github.io/style.js/demo.html) to see how to use style.js.
+Look at `demo.html` to see how to use style.js.
 
 ```html
 <!DOCTYPE html>
