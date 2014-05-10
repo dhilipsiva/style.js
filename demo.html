@@ -3,30 +3,17 @@
     <head>
         <meta charset="utf-8" />
         <title>style.js demo :)</title>
-        <style type="text/css" media="all">
-            html, body{
-                min-height: 100%;
-            }
-            body{
-                position: relative;
-            }
-            #style-js-toolbar{
-                position: fixed;
-                bottom: 10px;
-                right: 10px;
-                width: 400px;
-                height: 400px;
-                z-index: 10;
-                background-color: rgba(0,0,0,0.1);
-            }
-        </style>
+        <link href="css/demo.css" media="all" rel="stylesheet" type="text/css" />
     </head>
     <body>
         <div id="style-js-demo">
             style.js demo :)
         </div>
-        <div id="style-js-toolbar" style="display:hide;">
+        <div id="style-js-demo-2">
+            This is next one.
         </div>
+        <table id="style-js-toolbar" style="display:hide;">
+        </table>
     </body>
     <script type="text/javascript" charset="utf-8" src="src/js/style.js"></script>
     <script type="text/javascript" charset="utf-8">
@@ -38,17 +25,29 @@
                 name: "Demo Element",
                 selectors: "#style-js-demo",
                 properties: [{
-                    name: "background-color",
-                    initial: "#92ee0b",
+                    name: "color",
+                    initial: "#0bee92",
                     type: "color"
                 }, {
                     name: "font-size",
                     initial: "12px",
                     type: "text"
                 }]
+            },{
+                name: "Second line",
+                selectors: "#style-js-demo-2",
+                properties: [{
+                    name: "background-color",
+                    initial: "#FD4FFC",
+                    type: "color"
+                },{
+                    name: "font-size",
+                    initial: "15px",
+                    type: "text"
+                }]
             }]
         };
-        var styleJS = new StyleJS(config);
-        StyleJS.show()
+        var style = new StyleJS(config);
+        style.show()
     </script>
 </html>

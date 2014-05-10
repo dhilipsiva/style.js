@@ -1,0 +1,25 @@
+html, body{
+    min-height: 100%;
+}
+body{
+    position: relative;
+}
+#style-js-toolbar{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    width: 400px;
+    height: 400px;
+    z-index: 10;
+    background-color: rgba(0,0,0,0.1);
+    overflow: scroll;
+}
+.style-js-input-wrapper{
+    /* Styling of the wrapper goes here*/
+}
+.style-js-input-label{
+    /* Styling of the labels goes here*/
+}
+.style-js-input{
+    /* Styling of the inputs goes here*/
+}

@@ -52,11 +52,16 @@ class StyleJS
     @downloadButton.download = "stylejs.json"
     @downloadButton.innerHTML = "Download Changes"
     @downloadButton.href = "#"
+    @downloadButton.className = "style-js-download"
+
     @changeManager = new ChangeManager
     self = @
 
     for item in @config.items
       elements = document.body.querySelectorAll item.selectors
+      item_header = document.createElement "th"
+      item_header.innerHTML = "<h4>#{item.name}</h4>"
+      @toolbar.appendChild item_header
 
       for property in item.properties
         input = document.createElement 'input'
@@ -76,13 +81,31 @@ class StyleJS
 
           targAttrJS = targAttr.toJSProperty()
 
-          for element in elements
+          for element in document.body.querySelectorAll targSelectors
             element.style[targAttrJS] = @value
 
         input.onkeyup = input.onchange
-        @toolbar.appendChild input
 
-    @toolbar.appendChild @downloadButton
+        div = document.createElement "tr"
+        div.className = "style-js-input-wrapper"
+
+        label = document.createElement "td"
+        label.className = "style-js-input-label"
+        label.innerText = property.name
+
+        input_tr = document.createElement "td"
+        input_tr.className = "style-js-input"
+        input_tr.appendChild input
+
+
+        div.appendChild label
+        div.appendChild input_tr
+
+        @toolbar.appendChild div
+
+    dld_header = document.createElement "th"
+    dld_header.appendChild @downloadButton
+    @toolbar.appendChild dld_header
 
   hide: ->
     @toolbar.style.display = "none"
