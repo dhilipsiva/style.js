@@ -1,0 +1,22 @@
+{
+  "name": "style.js",
+  "version": "0.1.0",
+  "ignore": [
+    "lib",
+    "test",
+    "spec",
+    "src",
+    "node_modules",
+    "Gruntfile.js",
+    "SpecRunner.html",
+    "package.json",
+    "bower.json",
+    ".travis.yml",
+    ".gitignore"
+  ],
+  "dependencies": {
+  },
+  "devDependencies": {
+    "jasmine": "~1.3.1"
+  }
+}
