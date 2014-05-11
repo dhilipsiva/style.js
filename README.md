@@ -17,7 +17,7 @@ Avoid the back-and-forth circus with 3 Steps.
 
 #### Add and configure `style.js`
 
-Have a look at `demo.html` to see how to fix add and configure `style.js`
+Have a look at [demo.html](https://github.com/dhilipsiva/style.js/blob/master/demo.html) to see how to fix add and configure `style.js`
 
 #### Ask your non-techie client / boss to make changes using the configured GUI
 
