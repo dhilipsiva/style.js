@@ -1,0 +1,12 @@
+name: Your New Jekyll Site
+markdown: redcarpet
+highlighter: 'pygments'
+exclude:
+  - "node_modules"
+  - "package.json"
+  - "Rakefile"
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "LICENSE"
+  - "config.rb"
+  - "uncss.js"
