@@ -1,6 +1,10 @@
 style.js
 ===
 
+DEMO URL: (http://dhilipsiva.com/style.js/)[http://dhilipsiva.com/style.js/]
+GitHub URL: (https://github.com/dhilipsiva/style.js)[https://github.com/dhilipsiva/style.js]
+BLOG URL: (http://dhilipsiva.com/2014/05/11/style-js.html)[http://dhilipsiva.com/2014/05/11/style-js.html]
+
 A layman's tool to style HTML Elements and share CSS values
 
 ### Motive behind style.js
@@ -17,7 +21,7 @@ Avoid the back-and-forth circus with 3 Steps.
 
 #### Add and configure `style.js`
 
-Have a look at [demo.html](https://github.com/dhilipsiva/style.js/blob/master/demo.html) to see how to fix add and configure `style.js`
+Have a look at [index.html](https://github.com/dhilipsiva/style.js/blob/master/index.html) to see how to fix add and configure `style.js`
 
 #### Ask your non-techie client / boss to make changes using the configured GUI
 
@@ -76,3 +80,5 @@ config = {
 ### Browser Support
 
 Works well with chrome. I didn't test it with any other browsers, but I am guessing it should work OK. Chrome is all that matters. Because if the Client you are building the product for is not ready to use latest Chrome for testing, maybe you should not build a product for him. This is something that is to be used only during the development. So I believe Chrome is good Enough. Pull requests are always welcomed.
+
+
