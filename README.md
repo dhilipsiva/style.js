@@ -19,7 +19,7 @@ Avoid the back-and-forth circus with 3 Steps.
 
 Have a look at `demo.html` to see how to fix add and configure `style.js`
 
-#### Ask your `non-techie client` / boss to make changes using the configured GUI
+#### Ask your non-techie client / boss to make changes using the configured GUI
 
 ![Make Changes](https://raw.githubusercontent.com/dhilipsiva/style.js/master/images/make-changes.png "Make Changes")
 
