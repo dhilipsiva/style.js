@@ -21,13 +21,13 @@ Have a look at `demo.html` to see how to fix add and configure `style.js`
 
 #### Ask your `non-techie client` / boss to make changes using the configured GUI
 
-![Make Changes](https://raw.github.com/dhilipsiva/DSBarChart/master/images/make-changes.png "Make Changes")
+![Make Changes](https://raw.githubusercontent.com/dhilipsiva/DSBarChart/master/images/make-changes.png "Make Changes")
 
 #### After they make change, ask them to download the JSON file and send it to you.
 
-![Download](https://raw.github.com/dhilipsiva/DSBarChart/master/images/download.png "Download")
+![Download](https://raw.githubusercontent.com/dhilipsiva/DSBarChart/master/images/download.png "Download")
 
-![JSON](https://raw.github.com/dhilipsiva/DSBarChart/master/images/json.png "JSON")
+![JSON](https://raw.githubusercontent.com/dhilipsiva/DSBarChart/master/images/json.png "JSON")
 
 ### Browser Support
 
