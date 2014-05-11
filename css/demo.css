@@ -1,9 +1,11 @@
 html, body{
     min-height: 100%;
 }
+
 body{
     position: relative;
 }
+
 #style-js-toolbar{
     position: fixed;
     bottom: 10px;
@@ -13,13 +15,25 @@ body{
     z-index: 10;
     background-color: rgba(0,0,0,0.1);
     overflow: scroll;
+    display:hidden;
 }
+
 .style-js-input-wrapper{
     /* Styling of the wrapper goes here*/
 }
+
 .style-js-input-label{
     /* Styling of the labels goes here*/
 }
+
 .style-js-input{
     /* Styling of the inputs goes here*/
+}
+
+.style-js-demo {
+    background-color:#0bee92;font-size:12px;
+}
+
+.style-js-demo-2{
+    color:#FD4FFC;font-size:15px;
 }
