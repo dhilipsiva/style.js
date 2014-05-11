@@ -1,11 +1,11 @@
 style.js
 ===
 
-DEMO URL: [http://dhilipsiva.com/style.js/](http://dhilipsiva.com/style.js/)
+Demo URL: [http://dhilipsiva.com/style.js/](http://dhilipsiva.com/style.js/)
 
 GitHub URL: [https://github.com/dhilipsiva/style.js](https://github.com/dhilipsiva/style.js)
 
-BLOG URL: [http://dhilipsiva.com/2014/05/11/style-js.html](http://dhilipsiva.com/2014/05/11/style-js.html)
+Blog URL: [http://dhilipsiva.com/2014/05/11/style-js.html](http://dhilipsiva.com/2014/05/11/style-js.html)
 
 A layman's tool to style HTML Elements and share CSS values
 
