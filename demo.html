@@ -25,12 +25,21 @@
         config = {
             name: "Demo Page",
             toolbar: "#style-js-toolbar",
+            // `items`: Collection of tweakable sets
             items: [{
+                // `name`: Human-Friendly name for this item
                 name: "Demo Element",
+                // `selectors`: Selectors that these tweaks apply to.
+                // `selectors` any string that is accceptable by `querySelectorAll` javascript API
                 selectors: "#style-js-demo",
+                // `properties`: collection of `css` properties
                 properties: [{
+                    // `name`: name of the css properties. All CSS properties are supported.
                     name: "background-color",
+                    // `initial`: initial value for this property(optional)
                     initial: "#0bee92",
+                    // `type`: `type` attribute of the `<input>` tag
+                    // `type`: can be any value that is supported by the `<input>`s `type` attribute
                     type: "color"
                 }, {
                     name: "font-size",
